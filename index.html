@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic-Tac-Toe by Clifton Hill</title>
+  <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Tic-Tac-Toe</h1>
+  </header>
+  <div class="nav">
+    <h2>+ Play Game? +</h2>
+    <div class="score human">
+      Human:<br />
+      <span class="points">0</span>
+      </div>
+      <div class="nav-start">
+          <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select><br />
+          <button class="start">START</button>
+      </div>
+
+      <div class="score computer">
+        Computer:<br />
+        <span class="points">0</span>
+        </div>
+  </div>
+
+
+  <div class="game-board">
+    <div class="row bottom-border">
+      <div class="col right-border"><div class="cell"></div></div>
+      <div class="col right-border"><div class="cell"></div></div>
+      <div class="col "><div class="cell"></div></div>
+    </div>
+    <div class="row bottom-border">
+      <div class="col right-border"><div class="cell"></div></div>
+      <div class="col right-border"><div class="cell"></div></div>
+      <div class="col"><div class="cell"></div></div>
+    </div>
+    <div class="row">
+      <div class="col right-border"><div class="cell"></div></div>
+      <div class="col right-border"><div class="cell"></div></div>
+      <div class="col"><div class="cell"></div></div>
+    </div>
+  </div>
+  <footer>
+    Copyright 2020 by Clifton Hill<br />
+    Contact info - <a href="https://github.com/CliftonHill">GitHub</a> / <a href="https://cliftonhill.github.io/">Web Dev Portfolio</a>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

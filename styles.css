@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #ffecc6;
+  margin: 0 auto 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-family: "Sedgwick Ave", cursive;
+}
+
+h2 {
+  color: orange;
+  margin: 0.5rem auto 0;
+  font-size: 1.7rem;
+}
+
+footer {
+  background-color: #ffd480;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav {
+  border: 0.4rem dashed orange;
+  border-radius: 5%;
+  margin: 0.5rem auto;
+  padding: 0;
+  width: 30rem;
+}
+
+.game-board {
+  height: 22rem;
+  width: 22rem;
+  margin: 1rem auto;
+  padding: 0;
+  font-size: 0;
+}
+
+.row { /*zeroing out font-size for .game-board removed slight space between cells*/
+  height: 6.8rem;
+}
+
+.col {
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  top: 20px;
+}
+
+.cell {
+  width: 6.3rem;
+  height: 100%;
+  font-size: 6.8rem;
+  font-family: "Sedgwick Ave", cursive;
+}
+
+.right-border {
+  border-right: 0.5rem solid black;
+}
+
+.bottom-border {
+  border-bottom: 0.5rem solid black;
+}
+
+.playable:hover {
+  background-color: orange;
+}
+
+.score {
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 0.5rem;
+}
+
+.human {
+  color: green;
+}
+
+.computer {
+  color: brown;
+}
+
+.nav-start {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.glow {
+  background-color: orange;
+  text-shadow: 0.5px 0.5px 20px white;
+}
+
+.alert {
+  text-shadow: 1px 1px 10px yellow;
+  font-weight: bold;
+}
+
+button {
+  margin: 0.2rem auto 0.5rem;
+  background-color: #ffecc6;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+text-indent:0;
+	border:4px solid orange;
+	display:inline-block;
+	color:brown;
+	font-family:arial;
+	font-size:1.4rem;
+	font-weight:bold;
+	font-style:normal;
+height:2.5rem;
+	line-height:2.5rem;
+width:100px;
+	text-decoration:none;
+	text-align:center;
+}
+
+button:hover {
+	background-color:#fa6a0a;
+}
+
+button:active {
+	position:relative;
+	top:1px;
+}
+
+#difficulty {
+  width: 100px;
+  font-size: 1.0rem;
+}
+
+/* FOR PHONE */
+
+@media screen and (max-width: 767px) {
+
+  body {
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 3.3rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    left: 0;
+  }
+
+  .nav {
+    width: 85%;
+    max-width: 26rem;
+    margin: 0.5rem auto 0.5rem auto;
+    padding: 0;
+  }
+  .score {
+    margin: 0;
+    padding: 0 0.5rem;
+  }
+  .game-board {
+    height: 20rem;
+    width: 20rem;
+  }
+  .row {
+    height: 5.8rem;
+  }
+  .cell {
+    width: 5.8rem;
+    font-size: 5.8rem;
+  }
+  #difficulty {
+    font-size: 1.2rem;
+  }
+
+}
